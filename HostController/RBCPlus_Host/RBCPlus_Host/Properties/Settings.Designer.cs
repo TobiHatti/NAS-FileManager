@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RBCNAS_Host.Properties
+namespace RBCPlus_Host.Properties
 {
 
 

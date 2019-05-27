@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RBCNAS_Host
+namespace RBCPlus_Host
 {
     static class Program
     {

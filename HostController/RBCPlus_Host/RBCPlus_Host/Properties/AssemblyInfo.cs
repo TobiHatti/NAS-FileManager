@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("RBCNAS_Host")]
+[assembly: AssemblyTitle("RBCPlus_Host")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RBCNAS_Host")]
+[assembly: AssemblyProduct("RBCPlus_Host")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Die folgende GUID bestimmt die ID der Typbibliothek, wenn dieses Projekt für COM verfügbar gemacht wird
-[assembly: Guid("9400b992-92e8-492b-88c5-5de39f719009")]
+[assembly: Guid("6e5ac9e3-09fe-4c69-806e-c914f235d371")]
 
 // Versionsinformationen für eine Assembly bestehen aus den folgenden vier Werten:
 //
