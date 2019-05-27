@@ -1,6 +1,6 @@
 ﻿namespace RBCPlus_Host
 {
-    partial class Form1
+    partial class RBCP_Menu
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RBCP_Menu));
             this.btnStartSystem = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.gbxOperations = new System.Windows.Forms.GroupBox();
-            this.gbxMonitoring = new System.Windows.Forms.GroupBox();
-            this.gbxConfiguration = new System.Windows.Forms.GroupBox();
             this.btnStopSystem = new System.Windows.Forms.Button();
-            this.txbStatusOutput = new System.Windows.Forms.TextBox();
+            this.gbxMonitoring = new System.Windows.Forms.GroupBox();
             this.btnSystemMonitor = new System.Windows.Forms.Button();
-            this.btnSystemSettings = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gbxConfiguration = new System.Windows.Forms.GroupBox();
             this.btnSystemSetup = new System.Windows.Forms.Button();
+            this.btnSystemSettings = new System.Windows.Forms.Button();
+            this.txbStatusOutput = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.gbxOperations.SuspendLayout();
             this.gbxMonitoring.SuspendLayout();
@@ -48,9 +48,10 @@
             // 
             // btnStartSystem
             // 
+            this.btnStartSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(255)))), ((int)(((byte)(202)))));
             resources.ApplyResources(this.btnStartSystem, "btnStartSystem");
             this.btnStartSystem.Name = "btnStartSystem";
-            this.btnStartSystem.UseVisualStyleBackColor = true;
+            this.btnStartSystem.UseVisualStyleBackColor = false;
             // 
             // pbxLogo
             // 
@@ -66,12 +67,25 @@
             this.gbxOperations.Name = "gbxOperations";
             this.gbxOperations.TabStop = false;
             // 
+            // btnStopSystem
+            // 
+            this.btnStopSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            resources.ApplyResources(this.btnStopSystem, "btnStopSystem");
+            this.btnStopSystem.Name = "btnStopSystem";
+            this.btnStopSystem.UseVisualStyleBackColor = false;
+            // 
             // gbxMonitoring
             // 
             this.gbxMonitoring.Controls.Add(this.btnSystemMonitor);
             resources.ApplyResources(this.gbxMonitoring, "gbxMonitoring");
             this.gbxMonitoring.Name = "gbxMonitoring";
             this.gbxMonitoring.TabStop = false;
+            // 
+            // btnSystemMonitor
+            // 
+            resources.ApplyResources(this.btnSystemMonitor, "btnSystemMonitor");
+            this.btnSystemMonitor.Name = "btnSystemMonitor";
+            this.btnSystemMonitor.UseVisualStyleBackColor = true;
             // 
             // gbxConfiguration
             // 
@@ -81,22 +95,12 @@
             this.gbxConfiguration.Name = "gbxConfiguration";
             this.gbxConfiguration.TabStop = false;
             // 
-            // btnStopSystem
+            // btnSystemSetup
             // 
-            resources.ApplyResources(this.btnStopSystem, "btnStopSystem");
-            this.btnStopSystem.Name = "btnStopSystem";
-            this.btnStopSystem.UseVisualStyleBackColor = true;
-            // 
-            // txbStatusOutput
-            // 
-            resources.ApplyResources(this.txbStatusOutput, "txbStatusOutput");
-            this.txbStatusOutput.Name = "txbStatusOutput";
-            // 
-            // btnSystemMonitor
-            // 
-            resources.ApplyResources(this.btnSystemMonitor, "btnSystemMonitor");
-            this.btnSystemMonitor.Name = "btnSystemMonitor";
-            this.btnSystemMonitor.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnSystemSetup, "btnSystemSetup");
+            this.btnSystemSetup.Name = "btnSystemSetup";
+            this.btnSystemSetup.UseVisualStyleBackColor = true;
+            this.btnSystemSetup.Click += new System.EventHandler(this.btnSystemSetup_Click);
             // 
             // btnSystemSettings
             // 
@@ -104,18 +108,18 @@
             this.btnSystemSettings.Name = "btnSystemSettings";
             this.btnSystemSettings.UseVisualStyleBackColor = true;
             // 
+            // txbStatusOutput
+            // 
+            resources.ApplyResources(this.txbStatusOutput, "txbStatusOutput");
+            this.txbStatusOutput.Name = "txbStatusOutput";
+            this.txbStatusOutput.ReadOnly = true;
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // btnSystemSetup
-            // 
-            resources.ApplyResources(this.btnSystemSetup, "btnSystemSetup");
-            this.btnSystemSetup.Name = "btnSystemSetup";
-            this.btnSystemSetup.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // RBCP_Menu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,10 +132,8 @@
             this.Controls.Add(this.pbxLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "RBCP_Menu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.gbxOperations.ResumeLayout(false);
             this.gbxMonitoring.ResumeLayout(false);
