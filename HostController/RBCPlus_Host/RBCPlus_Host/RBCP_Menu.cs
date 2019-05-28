@@ -30,8 +30,7 @@ namespace RBCPlus_Host
                 btnSystemMonitor.Enabled = false;
                 btnSystemSettings.Enabled = false;
 
-                txbStatusOutput.AppendText("[ERROR]\t*** WARNING ***\r\n");
-                txbStatusOutput.AppendText("\tNo System Configurations Found!\r\n");
+                txbStatusOutput.AppendText("[ERROR]\tNo System Configurations Found!\r\n");
                 txbStatusOutput.AppendText("\tConfigure the System by clicking on \r\n");
                 txbStatusOutput.AppendText("\t[Setup]\r\n");
 
