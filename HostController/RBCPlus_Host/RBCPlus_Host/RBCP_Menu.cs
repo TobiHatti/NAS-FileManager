@@ -23,7 +23,7 @@ namespace RBCPlus_Host
 
             txbStatusOutput.AppendText("[INFO]\tSearching for Config-Files...\r\n");
 
-            if (!File.Exists(@"C:\RBCPlus\config\rbcplus.config"))
+            if (!File.Exists(@"C:\RBCPlus\config\rbcplus.ini"))
             {
                 btnStartSystem.Enabled = false;
                 btnStopSystem.Enabled = false;

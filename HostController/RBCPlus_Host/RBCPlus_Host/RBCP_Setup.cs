@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,55 @@ namespace RBCPlus_Host
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            // Creating File-Structure 
+            if (!File.Exists(@"C:\RBCPlus\config\rbcplus.ini"))
+            {
+                // Main Directory
+                Directory.CreateDirectory(@"C:\RBCPlus\");
+
+                // Child-Directories
+                Directory.CreateDirectory(@"C:\RBCPlus\config\");
+            }
+
+            // Creating/Writing config-file
+            StreamWriter config = new StreamWriter(@"C:\RBCPlus\config\rbcplus.ini");
+
+            // Menu-Point: Main Settings
+            config.WriteLine("[MAIN-SETTINGS]");
+
+            config.WriteLine("NAS_NAME=" + txbNasName.Text);
+            config.WriteLine("NAS_DESCRIPTION=" + txbNasDescription.Text);
+
+            config.WriteLine("NAS_SIZE=" + numNasSize.Text);
+            config.WriteLine("RAID_TYPE=" + cbxRaidType.SelectedValue);
+
+            config.WriteLine("SYNC_FREQUENCY=" + cbxSyncFrequency.SelectedValue);
+            config.WriteLine("SYNC_STRATEGY=" + cbxSyncStrategy.SelectedValue);
+
+            config.WriteLine("LOG_ACCURACY=" + trbLogAccuracy.Value);
+            config.WriteLine("LOG_MAIL_NOTIFY=" + cbxSendLog.SelectedValue);
+            config.WriteLine("LOG_EMAIL_ADDRESS=" + txbLogEmail.Text);
+
+            // Menu-Point: Main Storage
+            config.WriteLine("[MAIN-STORAGE]");
+
+            config.WriteLine("MAIN_DRIVE=" + fbdMainStorageDriveBrowser.SelectedPath);
+
+            // Menu-Point: File Caching
+            config.WriteLine("[FILE-CACHING]");
+
+            // Menu-Point: File Requesting
+            config.WriteLine("[FILE-REQUESTING]");
+
+            // Menu-Point: Web Access
+            config.WriteLine("[WEB-ACCESS]");
+
+            // Menu-Point: User Accounts / Shares
+            config.WriteLine("[USER-ACCOUNTS-AND-SHARES]");
+
+            config.Close();
+
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

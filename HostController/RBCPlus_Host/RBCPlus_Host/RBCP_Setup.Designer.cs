@@ -34,27 +34,27 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.txbLogEmail = new System.Windows.Forms.TextBox();
+            this.cbxSendLog = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lblLogAccuracy = new System.Windows.Forms.Label();
             this.trbLogAccuracy = new System.Windows.Forms.TrackBar();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbxSyncStrategy = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxSyncFrequency = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numNasSize = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxRaidType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbNasDescription = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbNasName = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.cbxBackupFormat = new System.Windows.Forms.ComboBox();
@@ -65,12 +65,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.cbxBackupFrequency = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.rbnBackupFTP = new System.Windows.Forms.RadioButton();
+            this.rbnBackupLocal = new System.Windows.Forms.RadioButton();
+            this.chbEnableBackup = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbDirectAccesByAdmin = new System.Windows.Forms.CheckBox();
+            this.chbAllowDirectAccess = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.btnMainStorageDriveBrowse = new System.Windows.Forms.Button();
@@ -84,51 +84,51 @@
             this.btnPermaCacheBrowse = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cbxNasSizeUnit = new System.Windows.Forms.ComboBox();
+            this.numCacheSize = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.btnCacheDriveBrowse = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.cbxEnableCaching = new System.Windows.Forms.CheckBox();
+            this.chbEnableCaching = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cbxRequestSizeUnit = new System.Windows.Forms.ComboBox();
+            this.numRequestSize = new System.Windows.Forms.NumericUpDown();
+            this.label24 = new System.Windows.Forms.Label();
+            this.chbAllowRequestExtension = new System.Windows.Forms.CheckBox();
+            this.chbAllowRequestCanceling = new System.Windows.Forms.CheckBox();
+            this.cbxFileRequestDuration = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.chbEnableFileRequesting = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.txbWebAddress = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.chbEnableWebManagement = new System.Windows.Forms.CheckBox();
+            this.chbEnableWebInterface = new System.Windows.Forms.CheckBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.fbdMainStorageDriveBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.fbdBackupStorageBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.fbdCacheDriveBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.fbdPermaCacheBrowser = new System.Windows.Forms.FolderBrowserDialog();
-            this.cbxEnableFileRequesting = new System.Windows.Forms.CheckBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cbxFileRequestDuration = new System.Windows.Forms.ComboBox();
-            this.cbxAllowRequestCanceling = new System.Windows.Forms.CheckBox();
-            this.cbxAllowRequestExtension = new System.Windows.Forms.CheckBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.tabSetup.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbLogAccuracy)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNasSize)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -137,16 +137,16 @@
             this.tabPage3.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCacheSize)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRequestSize)).BeginInit();
             this.tabPage5.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSubmit
@@ -190,8 +190,8 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.textBox2);
-            this.groupBox4.Controls.Add(this.comboBox4);
+            this.groupBox4.Controls.Add(this.txbLogEmail);
+            this.groupBox4.Controls.Add(this.cbxSendLog);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.lblLogAccuracy);
             this.groupBox4.Controls.Add(this.trbLogAccuracy);
@@ -212,27 +212,27 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "E-Mail Adress";
             // 
-            // textBox2
+            // txbLogEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 20);
-            this.textBox2.TabIndex = 9;
+            this.txbLogEmail.Location = new System.Drawing.Point(110, 103);
+            this.txbLogEmail.Name = "txbLogEmail";
+            this.txbLogEmail.Size = new System.Drawing.Size(177, 20);
+            this.txbLogEmail.TabIndex = 9;
             // 
-            // comboBox4
+            // cbxSendLog
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cbxSendLog.FormattingEnabled = true;
+            this.cbxSendLog.Items.AddRange(new object[] {
             "Never",
             "Every Day",
             "Every 3 Days",
             "Every Week",
             "Every Month",
             "Instant"});
-            this.comboBox4.Location = new System.Drawing.Point(110, 76);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(177, 21);
-            this.comboBox4.TabIndex = 8;
+            this.cbxSendLog.Location = new System.Drawing.Point(110, 76);
+            this.cbxSendLog.Name = "cbxSendLog";
+            this.cbxSendLog.Size = new System.Drawing.Size(177, 21);
+            this.cbxSendLog.TabIndex = 8;
             // 
             // label8
             // 
@@ -275,9 +275,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.cbxSyncStrategy);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cbxSyncFrequency);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(306, 6);
             this.groupBox3.Name = "groupBox3";
@@ -286,16 +286,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Storage-Cahce Synchronisation";
             // 
-            // comboBox3
+            // cbxSyncStrategy
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbxSyncStrategy.FormattingEnabled = true;
+            this.cbxSyncStrategy.Items.AddRange(new object[] {
             "Sync every change",
             "Sync only differences"});
-            this.comboBox3.Location = new System.Drawing.Point(7, 73);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(280, 21);
-            this.comboBox3.TabIndex = 3;
+            this.cbxSyncStrategy.Location = new System.Drawing.Point(7, 73);
+            this.cbxSyncStrategy.Name = "cbxSyncStrategy";
+            this.cbxSyncStrategy.Size = new System.Drawing.Size(280, 21);
+            this.cbxSyncStrategy.TabIndex = 3;
             // 
             // label6
             // 
@@ -306,10 +306,10 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Sync. Strategy";
             // 
-            // comboBox1
+            // cbxSyncFrequency
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxSyncFrequency.FormattingEnabled = true;
+            this.cbxSyncFrequency.Items.AddRange(new object[] {
             "Instant",
             "Every Minute",
             "Every Hour",
@@ -320,10 +320,10 @@
             "Every 2 Days",
             "Every 5 Days",
             "Every Week"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(281, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cbxSyncFrequency.Location = new System.Drawing.Point(6, 32);
+            this.cbxSyncFrequency.Name = "cbxSyncFrequency";
+            this.cbxSyncFrequency.Size = new System.Drawing.Size(281, 21);
+            this.cbxSyncFrequency.TabIndex = 1;
             // 
             // label1
             // 
@@ -336,9 +336,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.numNasSize);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cbxRaidType);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(6, 156);
             this.groupBox2.Name = "groupBox2";
@@ -347,12 +347,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RAID";
             // 
-            // numericUpDown1
+            // numNasSize
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 32);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(282, 20);
-            this.numericUpDown1.TabIndex = 1;
+            this.numNasSize.Location = new System.Drawing.Point(6, 32);
+            this.numNasSize.Name = "numNasSize";
+            this.numNasSize.Size = new System.Drawing.Size(282, 20);
+            this.numNasSize.TabIndex = 1;
             // 
             // label3
             // 
@@ -363,20 +363,20 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "NAS-Size (TB)";
             // 
-            // comboBox2
+            // cbxRaidType
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbxRaidType.FormattingEnabled = true;
+            this.cbxRaidType.Items.AddRange(new object[] {
             "No RAID",
             "RAID 0",
             "RAID 1",
             "RAID 5",
             "RAID 6",
             "RAID 10"});
-            this.comboBox2.Location = new System.Drawing.Point(6, 71);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(282, 21);
-            this.comboBox2.TabIndex = 7;
+            this.cbxRaidType.Location = new System.Drawing.Point(6, 71);
+            this.cbxRaidType.Name = "cbxRaidType";
+            this.cbxRaidType.Size = new System.Drawing.Size(282, 21);
+            this.cbxRaidType.TabIndex = 7;
             // 
             // label4
             // 
@@ -389,10 +389,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txbNasDescription);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txbNasName);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(294, 144);
@@ -400,13 +400,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Appearance";
             // 
-            // textBox3
+            // txbNasDescription
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 72);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 66);
-            this.textBox3.TabIndex = 9;
+            this.txbNasDescription.Location = new System.Drawing.Point(6, 72);
+            this.txbNasDescription.Multiline = true;
+            this.txbNasDescription.Name = "txbNasDescription";
+            this.txbNasDescription.Size = new System.Drawing.Size(282, 66);
+            this.txbNasDescription.TabIndex = 9;
             // 
             // label2
             // 
@@ -426,12 +426,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "NAS-Description";
             // 
-            // textBox1
+            // txbNasName
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 20);
-            this.textBox1.TabIndex = 3;
+            this.txbNasName.Location = new System.Drawing.Point(6, 32);
+            this.txbNasName.Name = "txbNasName";
+            this.txbNasName.Size = new System.Drawing.Size(282, 20);
+            this.txbNasName.TabIndex = 3;
             // 
             // tabPage2
             // 
@@ -456,9 +456,9 @@
             this.groupBox7.Controls.Add(this.label12);
             this.groupBox7.Controls.Add(this.cbxBackupFrequency);
             this.groupBox7.Controls.Add(this.label14);
-            this.groupBox7.Controls.Add(this.radioButton2);
-            this.groupBox7.Controls.Add(this.radioButton1);
-            this.groupBox7.Controls.Add(this.checkBox3);
+            this.groupBox7.Controls.Add(this.rbnBackupFTP);
+            this.groupBox7.Controls.Add(this.rbnBackupLocal);
+            this.groupBox7.Controls.Add(this.chbEnableBackup);
             this.groupBox7.Location = new System.Drawing.Point(6, 145);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(593, 126);
@@ -537,42 +537,42 @@
             this.label14.TabIndex = 7;
             this.label14.Text = "Backup-Frequency";
             // 
-            // radioButton2
+            // rbnBackupFTP
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(194, 100);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(143, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Backup to cloud via FTP";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbnBackupFTP.AutoSize = true;
+            this.rbnBackupFTP.Location = new System.Drawing.Point(194, 100);
+            this.rbnBackupFTP.Name = "rbnBackupFTP";
+            this.rbnBackupFTP.Size = new System.Drawing.Size(143, 17);
+            this.rbnBackupFTP.TabIndex = 2;
+            this.rbnBackupFTP.TabStop = true;
+            this.rbnBackupFTP.Text = "Backup to cloud via FTP";
+            this.rbnBackupFTP.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbnBackupLocal
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(194, 71);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(125, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Backup to local drive";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbnBackupLocal.AutoSize = true;
+            this.rbnBackupLocal.Location = new System.Drawing.Point(194, 71);
+            this.rbnBackupLocal.Name = "rbnBackupLocal";
+            this.rbnBackupLocal.Size = new System.Drawing.Size(125, 17);
+            this.rbnBackupLocal.TabIndex = 1;
+            this.rbnBackupLocal.TabStop = true;
+            this.rbnBackupLocal.Text = "Backup to local drive";
+            this.rbnBackupLocal.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chbEnableBackup
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 19);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(139, 17);
-            this.checkBox3.TabIndex = 0;
-            this.checkBox3.Text = "Enable Storage-Backup";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chbEnableBackup.AutoSize = true;
+            this.chbEnableBackup.Location = new System.Drawing.Point(6, 19);
+            this.chbEnableBackup.Name = "chbEnableBackup";
+            this.chbEnableBackup.Size = new System.Drawing.Size(139, 17);
+            this.chbEnableBackup.TabIndex = 0;
+            this.chbEnableBackup.Text = "Enable Storage-Backup";
+            this.chbEnableBackup.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.checkBox2);
-            this.groupBox6.Controls.Add(this.checkBox1);
+            this.groupBox6.Controls.Add(this.chbDirectAccesByAdmin);
+            this.groupBox6.Controls.Add(this.chbAllowDirectAccess);
             this.groupBox6.Location = new System.Drawing.Point(6, 72);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(593, 67);
@@ -580,25 +580,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Access";
             // 
-            // checkBox2
+            // chbDirectAccesByAdmin
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(9, 43);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(189, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Direct access only by administrator";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chbDirectAccesByAdmin.AutoSize = true;
+            this.chbDirectAccesByAdmin.Location = new System.Drawing.Point(9, 43);
+            this.chbDirectAccesByAdmin.Name = "chbDirectAccesByAdmin";
+            this.chbDirectAccesByAdmin.Size = new System.Drawing.Size(189, 17);
+            this.chbDirectAccesByAdmin.TabIndex = 1;
+            this.chbDirectAccesByAdmin.Text = "Direct access only by administrator";
+            this.chbDirectAccesByAdmin.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chbAllowDirectAccess
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(9, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(172, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Drive can be accessed directly";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbAllowDirectAccess.AutoSize = true;
+            this.chbAllowDirectAccess.Location = new System.Drawing.Point(9, 19);
+            this.chbAllowDirectAccess.Name = "chbAllowDirectAccess";
+            this.chbAllowDirectAccess.Size = new System.Drawing.Size(172, 17);
+            this.chbAllowDirectAccess.TabIndex = 0;
+            this.chbAllowDirectAccess.Text = "Drive can be accessed directly";
+            this.chbAllowDirectAccess.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -725,8 +725,8 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label26);
-            this.groupBox9.Controls.Add(this.comboBox5);
-            this.groupBox9.Controls.Add(this.numericUpDown2);
+            this.groupBox9.Controls.Add(this.cbxNasSizeUnit);
+            this.groupBox9.Controls.Add(this.numCacheSize);
             this.groupBox9.Controls.Add(this.label20);
             this.groupBox9.Location = new System.Drawing.Point(7, 114);
             this.groupBox9.Name = "groupBox9";
@@ -735,24 +735,33 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Caching";
             // 
-            // comboBox5
+            // label26
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(265, 23);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(78, 13);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "(0 for unlimited)";
+            // 
+            // cbxNasSizeUnit
+            // 
+            this.cbxNasSizeUnit.FormattingEnabled = true;
+            this.cbxNasSizeUnit.Items.AddRange(new object[] {
             "KB",
             "MB",
             "GB"});
-            this.comboBox5.Location = new System.Drawing.Point(200, 20);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(59, 21);
-            this.comboBox5.TabIndex = 2;
+            this.cbxNasSizeUnit.Location = new System.Drawing.Point(200, 20);
+            this.cbxNasSizeUnit.Name = "cbxNasSizeUnit";
+            this.cbxNasSizeUnit.Size = new System.Drawing.Size(59, 21);
+            this.cbxNasSizeUnit.TabIndex = 2;
             // 
-            // numericUpDown2
+            // numCacheSize
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(123, 21);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(71, 20);
-            this.numericUpDown2.TabIndex = 1;
+            this.numCacheSize.Location = new System.Drawing.Point(123, 21);
+            this.numCacheSize.Name = "numCacheSize";
+            this.numCacheSize.Size = new System.Drawing.Size(71, 20);
+            this.numCacheSize.TabIndex = 1;
             // 
             // label20
             // 
@@ -769,7 +778,7 @@
             this.groupBox8.Controls.Add(this.btnCacheDriveBrowse);
             this.groupBox8.Controls.Add(this.label18);
             this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Controls.Add(this.cbxEnableCaching);
+            this.groupBox8.Controls.Add(this.chbEnableCaching);
             this.groupBox8.Location = new System.Drawing.Point(6, 6);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(593, 101);
@@ -815,15 +824,15 @@
             this.label17.Text = "Note: The Caching-Drive should be a fast SSD Drive. Redundancy is optional. \r\nFor" +
     " best performance use NVME or Optane Drives";
             // 
-            // cbxEnableCaching
+            // chbEnableCaching
             // 
-            this.cbxEnableCaching.AutoSize = true;
-            this.cbxEnableCaching.Location = new System.Drawing.Point(10, 49);
-            this.cbxEnableCaching.Name = "cbxEnableCaching";
-            this.cbxEnableCaching.Size = new System.Drawing.Size(126, 17);
-            this.cbxEnableCaching.TabIndex = 0;
-            this.cbxEnableCaching.Text = "Enable File-Chaching";
-            this.cbxEnableCaching.UseVisualStyleBackColor = true;
+            this.chbEnableCaching.AutoSize = true;
+            this.chbEnableCaching.Location = new System.Drawing.Point(10, 49);
+            this.chbEnableCaching.Name = "chbEnableCaching";
+            this.chbEnableCaching.Size = new System.Drawing.Size(126, 17);
+            this.chbEnableCaching.TabIndex = 0;
+            this.chbEnableCaching.Text = "Enable File-Chaching";
+            this.chbEnableCaching.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
@@ -839,21 +848,129 @@
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.label25);
-            this.groupBox11.Controls.Add(this.comboBox6);
-            this.groupBox11.Controls.Add(this.numericUpDown3);
+            this.groupBox11.Controls.Add(this.cbxRequestSizeUnit);
+            this.groupBox11.Controls.Add(this.numRequestSize);
             this.groupBox11.Controls.Add(this.label24);
-            this.groupBox11.Controls.Add(this.cbxAllowRequestExtension);
-            this.groupBox11.Controls.Add(this.cbxAllowRequestCanceling);
+            this.groupBox11.Controls.Add(this.chbAllowRequestExtension);
+            this.groupBox11.Controls.Add(this.chbAllowRequestCanceling);
             this.groupBox11.Controls.Add(this.cbxFileRequestDuration);
             this.groupBox11.Controls.Add(this.label23);
             this.groupBox11.Controls.Add(this.label22);
-            this.groupBox11.Controls.Add(this.cbxEnableFileRequesting);
+            this.groupBox11.Controls.Add(this.chbEnableFileRequesting);
             this.groupBox11.Location = new System.Drawing.Point(6, 6);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(592, 265);
             this.groupBox11.TabIndex = 0;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "General";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(276, 186);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 13);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "(0 for unlimited)";
+            // 
+            // cbxRequestSizeUnit
+            // 
+            this.cbxRequestSizeUnit.FormattingEnabled = true;
+            this.cbxRequestSizeUnit.Items.AddRange(new object[] {
+            "KB",
+            "MB",
+            "GB"});
+            this.cbxRequestSizeUnit.Location = new System.Drawing.Point(211, 183);
+            this.cbxRequestSizeUnit.Name = "cbxRequestSizeUnit";
+            this.cbxRequestSizeUnit.Size = new System.Drawing.Size(59, 21);
+            this.cbxRequestSizeUnit.TabIndex = 8;
+            // 
+            // numRequestSize
+            // 
+            this.numRequestSize.Location = new System.Drawing.Point(134, 183);
+            this.numRequestSize.Name = "numRequestSize";
+            this.numRequestSize.Size = new System.Drawing.Size(71, 20);
+            this.numRequestSize.TabIndex = 7;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 186);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(122, 13);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Max. requestable filesize";
+            // 
+            // chbAllowRequestExtension
+            // 
+            this.chbAllowRequestExtension.AutoSize = true;
+            this.chbAllowRequestExtension.Location = new System.Drawing.Point(10, 156);
+            this.chbAllowRequestExtension.Name = "chbAllowRequestExtension";
+            this.chbAllowRequestExtension.Size = new System.Drawing.Size(183, 17);
+            this.chbAllowRequestExtension.TabIndex = 5;
+            this.chbAllowRequestExtension.Text = "Allow Request-Duration extention";
+            this.chbAllowRequestExtension.UseVisualStyleBackColor = true;
+            // 
+            // chbAllowRequestCanceling
+            // 
+            this.chbAllowRequestCanceling.AutoSize = true;
+            this.chbAllowRequestCanceling.Location = new System.Drawing.Point(10, 132);
+            this.chbAllowRequestCanceling.Name = "chbAllowRequestCanceling";
+            this.chbAllowRequestCanceling.Size = new System.Drawing.Size(205, 17);
+            this.chbAllowRequestCanceling.TabIndex = 4;
+            this.chbAllowRequestCanceling.Text = "Allow Request-Canceling (Uncaching)";
+            this.chbAllowRequestCanceling.UseVisualStyleBackColor = true;
+            // 
+            // cbxFileRequestDuration
+            // 
+            this.cbxFileRequestDuration.FormattingEnabled = true;
+            this.cbxFileRequestDuration.Items.AddRange(new object[] {
+            "Ask every time",
+            "15 Minutes",
+            "30 Minutes",
+            "1 Hour",
+            "2 Hours",
+            "6 Hours",
+            "12 Hours",
+            "1 Day",
+            "2 Days",
+            "5 Days",
+            "1 Week",
+            "2 Weeks",
+            "1 Month"});
+            this.cbxFileRequestDuration.Location = new System.Drawing.Point(6, 94);
+            this.cbxFileRequestDuration.Name = "cbxFileRequestDuration";
+            this.cbxFileRequestDuration.Size = new System.Drawing.Size(151, 21);
+            this.cbxFileRequestDuration.TabIndex = 3;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 78);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(125, 13);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "Request-Cache duration:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(7, 20);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(435, 13);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Note: Files can be requesteed and kept in cache for a set amount of time for fast" +
+    "er access.";
+            // 
+            // chbEnableFileRequesting
+            // 
+            this.chbEnableFileRequesting.AutoSize = true;
+            this.chbEnableFileRequesting.Location = new System.Drawing.Point(6, 45);
+            this.chbEnableFileRequesting.Name = "chbEnableFileRequesting";
+            this.chbEnableFileRequesting.Size = new System.Drawing.Size(135, 17);
+            this.chbEnableFileRequesting.TabIndex = 0;
+            this.chbEnableFileRequesting.Text = "Enable File-Requesting";
+            this.chbEnableFileRequesting.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
@@ -867,6 +984,74 @@
             this.tabPage5.Text = "Web-Access";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.txbWebAddress);
+            this.groupBox13.Controls.Add(this.label28);
+            this.groupBox13.Location = new System.Drawing.Point(6, 105);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(593, 50);
+            this.groupBox13.TabIndex = 1;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Web-Config";
+            // 
+            // txbWebAddress
+            // 
+            this.txbWebAddress.Location = new System.Drawing.Point(111, 17);
+            this.txbWebAddress.Name = "txbWebAddress";
+            this.txbWebAddress.Size = new System.Drawing.Size(181, 20);
+            this.txbWebAddress.TabIndex = 1;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(10, 20);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(95, 13);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "URL or IP-Address";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.chbEnableWebManagement);
+            this.groupBox12.Controls.Add(this.chbEnableWebInterface);
+            this.groupBox12.Controls.Add(this.label27);
+            this.groupBox12.Location = new System.Drawing.Point(6, 6);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(593, 93);
+            this.groupBox12.TabIndex = 0;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "General";
+            // 
+            // chbEnableWebManagement
+            // 
+            this.chbEnableWebManagement.AutoSize = true;
+            this.chbEnableWebManagement.Location = new System.Drawing.Point(6, 68);
+            this.chbEnableWebManagement.Name = "chbEnableWebManagement";
+            this.chbEnableWebManagement.Size = new System.Drawing.Size(249, 17);
+            this.chbEnableWebManagement.TabIndex = 2;
+            this.chbEnableWebManagement.Text = "Enable System-Management via Web-Interface";
+            this.chbEnableWebManagement.UseVisualStyleBackColor = true;
+            // 
+            // chbEnableWebInterface
+            // 
+            this.chbEnableWebInterface.AutoSize = true;
+            this.chbEnableWebInterface.Location = new System.Drawing.Point(6, 45);
+            this.chbEnableWebInterface.Name = "chbEnableWebInterface";
+            this.chbEnableWebInterface.Size = new System.Drawing.Size(130, 17);
+            this.chbEnableWebInterface.TabIndex = 1;
+            this.chbEnableWebInterface.Text = "Enable Web-Interface";
+            this.chbEnableWebInterface.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(7, 20);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(327, 13);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Note: Enable a Webinterface to access data from all over the world.";
+            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.groupBox14);
@@ -877,6 +1062,15 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "User Accounts / Shares";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Location = new System.Drawing.Point(6, 6);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(593, 96);
+            this.groupBox14.TabIndex = 0;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Users";
             // 
             // pbxLogo
             // 
@@ -912,200 +1106,6 @@
             this.fbdCacheDriveBrowser.Description = "Select Cache Drive";
             this.fbdCacheDriveBrowser.ShowNewFolderButton = false;
             // 
-            // cbxEnableFileRequesting
-            // 
-            this.cbxEnableFileRequesting.AutoSize = true;
-            this.cbxEnableFileRequesting.Location = new System.Drawing.Point(6, 45);
-            this.cbxEnableFileRequesting.Name = "cbxEnableFileRequesting";
-            this.cbxEnableFileRequesting.Size = new System.Drawing.Size(135, 17);
-            this.cbxEnableFileRequesting.TabIndex = 0;
-            this.cbxEnableFileRequesting.Text = "Enable File-Requesting";
-            this.cbxEnableFileRequesting.UseVisualStyleBackColor = true;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(7, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(435, 13);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Note: Files can be requesteed and kept in cache for a set amount of time for fast" +
-    "er access.";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 78);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(125, 13);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "Request-Cache duration:";
-            // 
-            // cbxFileRequestDuration
-            // 
-            this.cbxFileRequestDuration.FormattingEnabled = true;
-            this.cbxFileRequestDuration.Items.AddRange(new object[] {
-            "Ask every time",
-            "15 Minutes",
-            "30 Minutes",
-            "1 Hour",
-            "2 Hours",
-            "6 Hours",
-            "12 Hours",
-            "1 Day",
-            "2 Days",
-            "5 Days",
-            "1 Week",
-            "2 Weeks",
-            "1 Month"});
-            this.cbxFileRequestDuration.Location = new System.Drawing.Point(6, 94);
-            this.cbxFileRequestDuration.Name = "cbxFileRequestDuration";
-            this.cbxFileRequestDuration.Size = new System.Drawing.Size(151, 21);
-            this.cbxFileRequestDuration.TabIndex = 3;
-            // 
-            // cbxAllowRequestCanceling
-            // 
-            this.cbxAllowRequestCanceling.AutoSize = true;
-            this.cbxAllowRequestCanceling.Location = new System.Drawing.Point(10, 132);
-            this.cbxAllowRequestCanceling.Name = "cbxAllowRequestCanceling";
-            this.cbxAllowRequestCanceling.Size = new System.Drawing.Size(205, 17);
-            this.cbxAllowRequestCanceling.TabIndex = 4;
-            this.cbxAllowRequestCanceling.Text = "Allow Request-Canceling (Uncaching)";
-            this.cbxAllowRequestCanceling.UseVisualStyleBackColor = true;
-            // 
-            // cbxAllowRequestExtension
-            // 
-            this.cbxAllowRequestExtension.AutoSize = true;
-            this.cbxAllowRequestExtension.Location = new System.Drawing.Point(10, 156);
-            this.cbxAllowRequestExtension.Name = "cbxAllowRequestExtension";
-            this.cbxAllowRequestExtension.Size = new System.Drawing.Size(183, 17);
-            this.cbxAllowRequestExtension.TabIndex = 5;
-            this.cbxAllowRequestExtension.Text = "Allow Request-Duration extention";
-            this.cbxAllowRequestExtension.UseVisualStyleBackColor = true;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "KB",
-            "MB",
-            "GB"});
-            this.comboBox6.Location = new System.Drawing.Point(211, 183);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(59, 21);
-            this.comboBox6.TabIndex = 8;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(134, 183);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(71, 20);
-            this.numericUpDown3.TabIndex = 7;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 186);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(122, 13);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "Max. requestable filesize";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(276, 186);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(78, 13);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "(0 for unlimited)";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(265, 23);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(78, 13);
-            this.label26.TabIndex = 10;
-            this.label26.Text = "(0 for unlimited)";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.checkBox5);
-            this.groupBox12.Controls.Add(this.checkBox4);
-            this.groupBox12.Controls.Add(this.label27);
-            this.groupBox12.Location = new System.Drawing.Point(6, 6);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(593, 93);
-            this.groupBox12.TabIndex = 0;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "General";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(7, 20);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(327, 13);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Note: Enable a Webinterface to access data from all over the world.";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 45);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(130, 17);
-            this.checkBox4.TabIndex = 1;
-            this.checkBox4.Text = "Enable Web-Interface";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 68);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(249, 17);
-            this.checkBox5.TabIndex = 2;
-            this.checkBox5.Text = "Enable System-Management via Web-Interface";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.textBox4);
-            this.groupBox13.Controls.Add(this.label28);
-            this.groupBox13.Location = new System.Drawing.Point(6, 105);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(593, 50);
-            this.groupBox13.TabIndex = 1;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Web-Config";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(10, 20);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(95, 13);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "URL or IP-Address";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(111, 17);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(181, 20);
-            this.textBox4.TabIndex = 1;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Location = new System.Drawing.Point(6, 6);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(593, 96);
-            this.groupBox14.TabIndex = 0;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Users";
-            // 
             // RBCP_Setup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1130,7 +1130,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNasSize)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1145,20 +1145,20 @@
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCacheSize)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRequestSize)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1171,31 +1171,31 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxSyncFrequency;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbxSyncStrategy;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxRaidType;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbNasDescription;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbNasName;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numNasSize;
         private System.Windows.Forms.Label lblLogAccuracy;
         private System.Windows.Forms.TrackBar trbLogAccuracy;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbxSendLog;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbLogEmail;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.GroupBox groupBox5;
@@ -1209,12 +1209,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnBackupDriveBrowse;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.RadioButton rbnBackupFTP;
+        private System.Windows.Forms.RadioButton rbnBackupLocal;
+        private System.Windows.Forms.CheckBox chbEnableBackup;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chbDirectAccesByAdmin;
+        private System.Windows.Forms.CheckBox chbAllowDirectAccess;
         private System.Windows.Forms.FolderBrowserDialog fbdBackupStorageBrowser;
         private System.Windows.Forms.ComboBox cbxBackupFormat;
         private System.Windows.Forms.Label label15;
@@ -1223,7 +1223,7 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.CheckBox cbxEnableCaching;
+        private System.Windows.Forms.CheckBox chbEnableCaching;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnCacheDriveBrowse;
         private System.Windows.Forms.FolderBrowserDialog fbdCacheDriveBrowser;
@@ -1234,29 +1234,29 @@
         private System.Windows.Forms.Button btnPermaCacheBrowse;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.ComboBox cbxNasSizeUnit;
+        private System.Windows.Forms.NumericUpDown numCacheSize;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.FolderBrowserDialog fbdPermaCacheBrowser;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.CheckBox cbxAllowRequestExtension;
-        private System.Windows.Forms.CheckBox cbxAllowRequestCanceling;
+        private System.Windows.Forms.CheckBox chbAllowRequestExtension;
+        private System.Windows.Forms.CheckBox chbAllowRequestCanceling;
         private System.Windows.Forms.ComboBox cbxFileRequestDuration;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.CheckBox cbxEnableFileRequesting;
+        private System.Windows.Forms.CheckBox chbEnableFileRequesting;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.ComboBox cbxRequestSizeUnit;
+        private System.Windows.Forms.NumericUpDown numRequestSize;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chbEnableWebInterface;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbWebAddress;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox chbEnableWebManagement;
         private System.Windows.Forms.GroupBox groupBox14;
     }
 }
