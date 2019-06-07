@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RBCP_Config.cs" />
     <Compile Include="RBCP_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +64,7 @@
     <Compile Include="RBCP_Setup.Designer.cs">
       <DependentUpon>RBCP_Setup.cs</DependentUpon>
     </Compile>
+    <Compile Include="RBCP_Data.cs" />
     <EmbeddedResource Include="RBCP_Menu.resx">
       <DependentUpon>RBCP_Menu.cs</DependentUpon>
     </EmbeddedResource>

@@ -72,24 +72,24 @@
             this.chbDirectAccesByAdmin = new System.Windows.Forms.CheckBox();
             this.chbAllowDirectAccess = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblMainDrive = new System.Windows.Forms.Label();
             this.btnMainStorageDriveBrowse = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.lbxPermaCahceFolders = new System.Windows.Forms.ListBox();
+            this.lbxPermaCacheFolders = new System.Windows.Forms.ListBox();
             this.btnRemovePermaCacheFolder = new System.Windows.Forms.Button();
             this.btnAddPermaCacheFolder = new System.Windows.Forms.Button();
             this.btnPermaCacheBrowse = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.cbxNasSizeUnit = new System.Windows.Forms.ComboBox();
+            this.cbxCacheSizeUnit = new System.Windows.Forms.ComboBox();
             this.numCacheSize = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblCacheDrive = new System.Windows.Forms.Label();
             this.btnCacheDriveBrowse = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -122,6 +122,7 @@
             this.fbdBackupStorageBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.fbdCacheDriveBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.fbdPermaCacheBrowser = new System.Windows.Forms.FolderBrowserDialog();
+            this.lblBackupDrive = new System.Windows.Forms.Label();
             this.tabSetup.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -366,13 +367,6 @@
             // cbxRaidType
             // 
             this.cbxRaidType.FormattingEnabled = true;
-            this.cbxRaidType.Items.AddRange(new object[] {
-            "No RAID",
-            "RAID 0",
-            "RAID 1",
-            "RAID 5",
-            "RAID 6",
-            "RAID 10"});
             this.cbxRaidType.Location = new System.Drawing.Point(6, 71);
             this.cbxRaidType.Name = "cbxRaidType";
             this.cbxRaidType.Size = new System.Drawing.Size(282, 21);
@@ -448,6 +442,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.lblBackupDrive);
             this.groupBox7.Controls.Add(this.cbxBackupFormat);
             this.groupBox7.Controls.Add(this.label15);
             this.groupBox7.Controls.Add(this.label13);
@@ -602,7 +597,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Controls.Add(this.lblMainDrive);
             this.groupBox5.Controls.Add(this.btnMainStorageDriveBrowse);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Controls.Add(this.label10);
@@ -613,14 +608,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "General";
             // 
-            // label16
+            // lblMainDrive
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(247, 37);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 13);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Current Drive: None";
+            this.lblMainDrive.AutoSize = true;
+            this.lblMainDrive.Location = new System.Drawing.Point(247, 37);
+            this.lblMainDrive.Name = "lblMainDrive";
+            this.lblMainDrive.Size = new System.Drawing.Size(101, 13);
+            this.lblMainDrive.TabIndex = 3;
+            this.lblMainDrive.Text = "Current Drive: None";
             // 
             // btnMainStorageDriveBrowse
             // 
@@ -665,7 +660,7 @@
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.lbxPermaCahceFolders);
+            this.groupBox10.Controls.Add(this.lbxPermaCacheFolders);
             this.groupBox10.Controls.Add(this.btnRemovePermaCacheFolder);
             this.groupBox10.Controls.Add(this.btnAddPermaCacheFolder);
             this.groupBox10.Controls.Add(this.btnPermaCacheBrowse);
@@ -677,13 +672,13 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Perma-Cache";
             // 
-            // lbxPermaCahceFolders
+            // lbxPermaCacheFolders
             // 
-            this.lbxPermaCahceFolders.FormattingEnabled = true;
-            this.lbxPermaCahceFolders.Location = new System.Drawing.Point(248, 37);
-            this.lbxPermaCahceFolders.Name = "lbxPermaCahceFolders";
-            this.lbxPermaCahceFolders.Size = new System.Drawing.Size(338, 56);
-            this.lbxPermaCahceFolders.TabIndex = 5;
+            this.lbxPermaCacheFolders.FormattingEnabled = true;
+            this.lbxPermaCacheFolders.Location = new System.Drawing.Point(248, 37);
+            this.lbxPermaCacheFolders.Name = "lbxPermaCacheFolders";
+            this.lbxPermaCacheFolders.Size = new System.Drawing.Size(338, 56);
+            this.lbxPermaCacheFolders.TabIndex = 5;
             // 
             // btnRemovePermaCacheFolder
             // 
@@ -725,7 +720,7 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label26);
-            this.groupBox9.Controls.Add(this.cbxNasSizeUnit);
+            this.groupBox9.Controls.Add(this.cbxCacheSizeUnit);
             this.groupBox9.Controls.Add(this.numCacheSize);
             this.groupBox9.Controls.Add(this.label20);
             this.groupBox9.Location = new System.Drawing.Point(7, 114);
@@ -744,17 +739,17 @@
             this.label26.TabIndex = 10;
             this.label26.Text = "(0 for unlimited)";
             // 
-            // cbxNasSizeUnit
+            // cbxCacheSizeUnit
             // 
-            this.cbxNasSizeUnit.FormattingEnabled = true;
-            this.cbxNasSizeUnit.Items.AddRange(new object[] {
+            this.cbxCacheSizeUnit.FormattingEnabled = true;
+            this.cbxCacheSizeUnit.Items.AddRange(new object[] {
             "KB",
             "MB",
             "GB"});
-            this.cbxNasSizeUnit.Location = new System.Drawing.Point(200, 20);
-            this.cbxNasSizeUnit.Name = "cbxNasSizeUnit";
-            this.cbxNasSizeUnit.Size = new System.Drawing.Size(59, 21);
-            this.cbxNasSizeUnit.TabIndex = 2;
+            this.cbxCacheSizeUnit.Location = new System.Drawing.Point(200, 20);
+            this.cbxCacheSizeUnit.Name = "cbxCacheSizeUnit";
+            this.cbxCacheSizeUnit.Size = new System.Drawing.Size(59, 21);
+            this.cbxCacheSizeUnit.TabIndex = 2;
             // 
             // numCacheSize
             // 
@@ -774,7 +769,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.label19);
+            this.groupBox8.Controls.Add(this.lblCacheDrive);
             this.groupBox8.Controls.Add(this.btnCacheDriveBrowse);
             this.groupBox8.Controls.Add(this.label18);
             this.groupBox8.Controls.Add(this.label17);
@@ -786,14 +781,14 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "General";
             // 
-            // label19
+            // lblCacheDrive
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(246, 73);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(101, 13);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "Current Drive: None";
+            this.lblCacheDrive.AutoSize = true;
+            this.lblCacheDrive.Location = new System.Drawing.Point(246, 73);
+            this.lblCacheDrive.Name = "lblCacheDrive";
+            this.lblCacheDrive.Size = new System.Drawing.Size(101, 13);
+            this.lblCacheDrive.TabIndex = 4;
+            this.lblCacheDrive.Text = "Current Drive: None";
             // 
             // btnCacheDriveBrowse
             // 
@@ -1106,6 +1101,15 @@
             this.fbdCacheDriveBrowser.Description = "Select Cache Drive";
             this.fbdCacheDriveBrowser.ShowNewFolderButton = false;
             // 
+            // lblBackupDrive
+            // 
+            this.lblBackupDrive.AutoSize = true;
+            this.lblBackupDrive.Location = new System.Drawing.Point(7, 73);
+            this.lblBackupDrive.Name = "lblBackupDrive";
+            this.lblBackupDrive.Size = new System.Drawing.Size(101, 13);
+            this.lblBackupDrive.TabIndex = 11;
+            this.lblBackupDrive.Text = "Current Drive: None";
+            // 
             // RBCP_Setup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1219,22 +1223,22 @@
         private System.Windows.Forms.ComboBox cbxBackupFormat;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cbxBackupFrequency;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblMainDrive;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.CheckBox chbEnableCaching;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblCacheDrive;
         private System.Windows.Forms.Button btnCacheDriveBrowse;
         private System.Windows.Forms.FolderBrowserDialog fbdCacheDriveBrowser;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.ListBox lbxPermaCahceFolders;
+        private System.Windows.Forms.ListBox lbxPermaCacheFolders;
         private System.Windows.Forms.Button btnRemovePermaCacheFolder;
         private System.Windows.Forms.Button btnAddPermaCacheFolder;
         private System.Windows.Forms.Button btnPermaCacheBrowse;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.ComboBox cbxNasSizeUnit;
+        private System.Windows.Forms.ComboBox cbxCacheSizeUnit;
         private System.Windows.Forms.NumericUpDown numCacheSize;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.FolderBrowserDialog fbdPermaCacheBrowser;
@@ -1258,5 +1262,6 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.CheckBox chbEnableWebManagement;
         private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label lblBackupDrive;
     }
 }

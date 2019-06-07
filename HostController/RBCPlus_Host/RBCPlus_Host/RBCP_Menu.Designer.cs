@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RBCP_Menu));
             this.btnStartSystem = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
@@ -40,6 +41,7 @@
             this.btnSystemSettings = new System.Windows.Forms.Button();
             this.txbStatusOutput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tmrLoadConfig = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.gbxOperations.SuspendLayout();
             this.gbxMonitoring.SuspendLayout();
@@ -119,6 +121,12 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // tmrLoadConfig
+            // 
+            this.tmrLoadConfig.Enabled = true;
+            this.tmrLoadConfig.Interval = 500;
+            this.tmrLoadConfig.Tick += new System.EventHandler(this.tmrLoadConfig_Tick);
+            // 
             // RBCP_Menu
             // 
             resources.ApplyResources(this, "$this");
@@ -156,6 +164,7 @@
         private System.Windows.Forms.TextBox txbStatusOutput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSystemSetup;
+        private System.Windows.Forms.Timer tmrLoadConfig;
     }
 }
 

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,10 +18,15 @@ namespace RBCPlus_Host
         {
             InitializeComponent();
             pbxLogo.Image = Properties.Resources.RBCPlusBanner2;
+        }
 
+
+
+
+        private void LoadConfig()
+        {
             // Init Test
             // Create Required Files
-
             txbStatusOutput.AppendText("[INFO]\tSearching for Config-Files...\r\n");
 
             if (!File.Exists(@"C:\RBCPlus\config\rbcplus.ini"))
@@ -33,12 +39,37 @@ namespace RBCPlus_Host
                 txbStatusOutput.AppendText("[ERROR]\tNo System Configurations Found!\r\n");
                 txbStatusOutput.AppendText("\tConfigure the System by clicking on \r\n");
                 txbStatusOutput.AppendText("\t[Setup]\r\n");
+                Thread.Sleep(500);
 
             }
             else
             {
+
                 txbStatusOutput.AppendText("[INFO]\tConfig-File found!\r\n" +
                     "Loading config...\r\n");
+
+                Thread.Sleep(500);
+
+                StreamReader sr = new StreamReader(@"C:\RBCPlus\config\rbcplus.ini");
+                string line;
+                string[] dataParts = new string[2];
+
+                while ((line = sr.ReadLine()) != null)
+                {
+                    if (line.StartsWith("[")) continue;
+
+                    dataParts = line.Split('=');
+
+                    RBCP_Config.Set((Config)Enum.Parse(typeof(Config), dataParts[0]), dataParts[1]);
+
+                    txbStatusOutput.AppendText("[LOAD]\tLoading: " + dataParts[0] + "\r\n");
+
+                    Thread.Sleep(5);
+                }
+
+                sr.Close();
+
+                txbStatusOutput.AppendText("[INFO]\tLoad Completed!\r\n");
             }
         }
 
@@ -57,6 +88,12 @@ namespace RBCPlus_Host
             }
 
             
+        }
+
+        private void tmrLoadConfig_Tick(object sender, EventArgs e)
+        {
+            tmrLoadConfig.Stop();
+            LoadConfig();
         }
     }
 }
