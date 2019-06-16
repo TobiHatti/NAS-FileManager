@@ -18,6 +18,9 @@ namespace RBCPlus_Host
         {
             InitializeComponent();
             pbxLogo.Image = Properties.Resources.RBCPlusBanner2;
+
+            RBCP_Log.CompactLog = txbStatusOutput;
+
         }
 
 
@@ -36,17 +39,17 @@ namespace RBCPlus_Host
                 btnSystemMonitor.Enabled = false;
                 btnSystemSettings.Enabled = false;
 
-                txbStatusOutput.AppendText("[ERROR]\tNo System Configurations Found!\r\n");
-                txbStatusOutput.AppendText("\tConfigure the System by clicking on \r\n");
-                txbStatusOutput.AppendText("\t[Setup]\r\n");
-                Thread.Sleep(500);
+                RBCP_Log.AddMessage(LogType.Error, "No System Configurations Found!");
+                RBCP_Log.AddMessage(LogType.Blank, "Configure the System by clicking on");
+                RBCP_Log.AddMessage(LogType.Setup, "");
 
+                Thread.Sleep(500);    
             }
             else
             {
 
-                txbStatusOutput.AppendText("[INFO]\tConfig-File found!\r\n" +
-                    "Loading config...\r\n");
+                RBCP_Log.AddMessage(LogType.Info, "Config-File found!");
+                RBCP_Log.AddMessage(LogType.Blank, "Loading config...");
 
                 Thread.Sleep(500);
 
@@ -62,14 +65,14 @@ namespace RBCPlus_Host
 
                     RBCP_Config.Set((Config)Enum.Parse(typeof(Config), dataParts[0]), dataParts[1]);
 
-                    txbStatusOutput.AppendText("[LOAD]\tLoading: " + dataParts[0] + "\r\n");
+                    RBCP_Log.AddMessage(LogType.Load, "Loading: " + dataParts[0]);
 
                     Thread.Sleep(5);
                 }
 
                 sr.Close();
 
-                txbStatusOutput.AppendText("[INFO]\tLoad Completed!\r\n");
+                RBCP_Log.AddMessage(LogType.Info, "Load Completed!");
             }
         }
 
@@ -84,7 +87,8 @@ namespace RBCPlus_Host
             else
             {
                 MessageBox.Show("Setup-Process has been aborted.", "Info", MessageBoxButtons.OK,MessageBoxIcon.Information);
-                txbStatusOutput.AppendText("[INFO]\tSetup Aborted.\r\n");
+
+                RBCP_Log.AddMessage(LogType.Info, "Setup Aborted.");
             }
 
             
@@ -94,6 +98,12 @@ namespace RBCPlus_Host
         {
             tmrLoadConfig.Stop();
             LoadConfig();
+        }
+
+        private void btnSystemMonitor_Click(object sender, EventArgs e)
+        {
+            RBCP_Monitor rbcp_monitor = new RBCP_Monitor();
+            rbcp_monitor.Show();
         }
     }
 }

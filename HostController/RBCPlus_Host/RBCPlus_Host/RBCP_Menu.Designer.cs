@@ -88,6 +88,7 @@
             resources.ApplyResources(this.btnSystemMonitor, "btnSystemMonitor");
             this.btnSystemMonitor.Name = "btnSystemMonitor";
             this.btnSystemMonitor.UseVisualStyleBackColor = true;
+            this.btnSystemMonitor.Click += new System.EventHandler(this.btnSystemMonitor_Click);
             // 
             // gbxConfiguration
             // 

@@ -89,5 +89,15 @@ namespace RBCPlus_Host.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RBCPlusBanner5 {
+            get {
+                object obj = ResourceManager.GetObject("RBCPlusBanner5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
