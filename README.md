@@ -1,4 +1,4 @@
-<img align="right" width="80" height="80" src="https://github.com/TobiHatti/RBCPlus-NAS-FileManager/blob/master/Common/RBCPlusIcon.png">
+<img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/RBCPlus/RBCPlus_Logo.png">
 
 # RBCPlus-NAS-FileManager
 
@@ -9,10 +9,12 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/RBCPlus-NAS-FileManager)](https://github.com/TobiHatti/RBCPlus-NAS-FileManager/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/RBCPlus-NAS-FileManager)](https://github.com/TobiHatti/RBCPlus-NAS-FileManager)
 
+![image](https://endev.at/content/projects/RBCPlus/RBCPlus_Banner_300.png)
+
 Request-Based, Caching, Smart FileManager for NAS-System
 
-![image](https://github.com/TobiHatti/RBCPlus-NAS-FileManager/blob/master/RBCP_sample_01.png)
-![image](https://github.com/TobiHatti/RBCPlus-NAS-FileManager/blob/master/RBCP_sample_02.png)
+![image](https://endev.at/content/projects/RBCPlus/projectImages/RBCP_sample_01.png)
+![image](https://endev.at/content/projects/RBCPlus/projectImages/RBCP_sample_02.png)
 
 ## Use-Case
 This tool is made for NAS-Systems, where quick access-time is a key importance. 
